@@ -83,6 +83,11 @@ const fp = (() => {
    */
   const pivot = (key, list) => list.reduce((acc, item) => ({ ...acc, [item[key]]: item }), {})
 
+  const flip = obj => Object.entries(obj).reduce(
+    (acc, [key, value]) => ({ ...acc, [value]: key }),
+    {},
+  )
+
   return {
     head,
     tail,
@@ -103,6 +108,7 @@ const fp = (() => {
     unzipObj,
     zipObj,
     pivot,
+    flip,
   }
 })()
 

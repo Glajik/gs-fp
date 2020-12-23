@@ -75,3 +75,7 @@ test('flatten', () => {
   expect(flatten([[1, 2], [3, 4]])).toEqual([1, 2, 3, 4])
   expect(flatten([[], [3, 4]])).toEqual([3, 4])
 })
+
+test('flip', () => {
+  expect(fp.flip({ a: 'red', b: 'green' })).toEqual({ red: 'a', green: 'b' })
+})
