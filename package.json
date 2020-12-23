@@ -1,0 +1,29 @@
+{
+  "name": "gs-fp",
+  "version": "1.0.0",
+  "description": "My own functional programming helper for Google Apps Script.",
+  "main": "fp.js",
+  "repository": "git@github.com:Glajik/gs-fp.git",
+  "author": "Viacheslav Glazhevskyi <glajik@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --fix",
+    "test": "jest",
+    "docs": "jsdoc2md -f src/Kava.js > api.md"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10",
+    "@types/jest": "^26.0.19",
+    "eslint": "^5.15.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "jest": "^26.6.3",
+    "jsdoc-to-markdown": "^5.0.1",
+    "prettier": "^2.2.1"
+  },
+  "dependencies": {
+  }
+}
